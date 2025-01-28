@@ -1,235 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prows Family Medicine</title>
+    <!-- Meta Description -->
+    <meta name="description" content="Small clinic in Fort Collins, Colorado, run by Joseph Prows.">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Prows Family Medicine</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-            rel="stylesheet">
-        <style>
-            .no-border {
-                border: none;
-            }
-        </style>
-    </head>
+    <!-- Base URL -->
+    <base href="/">
 
-    <body>
-        <main class="container my-5" aria-label="Main content">
-            <header class="text-center mb-4" aria-label="Header"
-                aria-role="banner">
-                <h1 class="display-4" tabindex="0">
-                    Prows Family Medicine, PLLC
-                </h1>
-                <p class="lead">
-                    The website for the teeny medical office owned and operated
-                    solely by Joseph Prows, MD/MPH
-                </p>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
 
-                <address>
-                    <a href="https://www.google.com/maps/dir//418%20S%20Howes%20St,%20Fort%20Collins,%20CO%2080521" target="_blank">
-                        418 S. Howes St, Unit 200-B
-                    </a><br>
-                    Downtown Fort Collins
-                </address>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
-                <p class="text-primary fw-bold">Opening April 2025</p>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/icons.css">
 
-                <a href="./preregister" class="btn btn-primary"
-                    aria-label="Link to pre-register" tabindex="0">
-                    Pre-register to be a patient
-                </a>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-            </header>
+    <!-- JavaScript -->
+    <script src="assets/js/bootstrap.js" defer></script>
 
-            <section class="text-center bg-light p-4 rounded"
-                aria-label="Event section" aria-role="region">
-                <h2 class="text-danger" tabindex="0">OPEN HOUSE</h2>
-                <p class="lead">
-                    FEATURING BOUNCY CASTLE, BEIGNETS, RED BEANS, TIE-DYE,
-                    TOURS, AND FREE WART-FREEZING.
-                </p>
-                <p>
-                    <strong>TENTATIVELY SCHEDULED FOR APRIL XX!</strong>
-                </p>
-            </section>
 
-            <section class="mt-5" aria-label="FAQ section">
-                <h2 tabindex="0">FAQ</h2>
-                <div class="accordion" id="faqAccordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="FAQquestion1"
-                            tabindex="0">
-                            <button class="accordion-button" type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#faq1"
-                                aria-expanded="true"
-                                aria-label="FAQ 1 button"
-                                aria-controls="faq1">
-                                What is this?
-                            </button>
-                        </h2>
-                        <div id="faq1" class="accordion-collapse collapse show"
-                            data-bs-parent="#faqAccordion"
-                            aria-labelledby="FAQ question 1">
-                            <div class="accordion-body">
-                                Prows Family Medicine is where I, Joseph Prows
-                                MD/MPH, will see patients and practice family
-                                medicine in beautiful downtown Fort Collins,
-                                Colorado. I graduated from Tulane University
-                                School of Medicine in New Orleans in 2009 and
-                                completed residency at the Alaska Family
-                                Medicine Residency Program in 2012. I am
-                                board-certified and have been practicing in Fort
-                                Collins since 2013.
-                            </div>
-                        </div>
-                    </div>
+  </head>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="FAQquestion2"
-                            tabindex="0">
-                            <button class="accordion-button collapsed"
-                                type="button" data-bs-toggle="collapse"
-                                data-bs-target="#faq2"
-                                aria-expanded="false"
-                                aria-label="FAQ 2 button"
-                                aria-controls="faq2">
-                                What is your practice like?
-                            </button>
-                        </h2>
-                        <div id="faq2" class="accordion-collapse collapse"
-                            data-bs-parent="#faqAccordion"
-                            aria-labelledby="FAQ question 2">
-                            <div class="accordion-body">
-                                I intend to run as simple and straightforward a
-                                practice as humanly possible.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="FAQquestion3"
-                            tabindex="0">
-                            <button class="accordion-button collapsed"
-                                type="button" data-bs-toggle="collapse"
-                                data-bs-target="#faq3"
-                                aria-expanded="false"
-                                aria-label="FAQ 3 button"
-                                aria-controls="faq3">
-                                How do I become a patient?
-                            </button>
-                        </h2>
-                        <div id="faq3" class="accordion-collapse collapse"
-                            data-bs-parent="#faqAccordion"
-                            aria-labelledby="FAQ question 3">
-                            <div class="accordion-body">
-                                Use the linked form above to share your contact
-                                info and get on my list as I try to organize
-                                this venture.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="FAQquestion4"
-                            tabindex="0">
-                            <button class="accordion-button collapsed"
-                                type="button" data-bs-toggle="collapse"
-                                data-bs-target="#faq4"
-                                aria-expanded="false"
-                                aria-label="FAQ 4 button"
-                                aria-controls="faq4">
-                                Do you accept insurance?
-                            </button>
-                        </h2>
-                        <div id="faq4" class="accordion-collapse collapse"
-                            data-bs-parent="#faqAccordion"
-                            aria-labelledby="FAQ question 4">
-                            <div class="accordion-body">
-                                It is my intent to be in-network with as many
-                                insurance companies as possible. However, the
-                                landscape of navigating insurance company
-                                contracts is a depraved hellscape, to put it
-                                mildly.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="FAQquestion5"
-                            tabindex="0">
-                            <button class="accordion-button collapsed"
-                                type="button" data-bs-toggle="collapse"
-                                data-bs-target="#faq5"
-                                aria-expanded="false"
-                                aria-label="FAQ 5 button"
-                                aria-controls="faq5">
-                                When do you start seeing patients?
-                            </button>
-                        </h2>
-                        <div id="faq5" class="accordion-collapse collapse"
-                            data-bs-parent="#faqAccordion"
-                            aria-labelledby="FAQ question 5">
-                            <div class="accordion-body">
-                                I hope to start seeing patients in April, 2025.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="FAQquestion6"
-                            tabindex="0">
-                            <button class="accordion-button collapsed"
-                                type="button" data-bs-toggle="collapse"
-                                data-bs-target="#faq6"
-                                aria-expanded="false"
-                                aria-label="FAQ 6 button"
-                                aria-controls="faq6">
-                                What is an "MD/MPH" degree?
-                            </button>
-                        </h2>
-                        <div id="faq6" class="accordion-collapse collapse"
-                            data-bs-parent="#faqAccordion"
-                            aria-labelledby="FAQ question 6">
-                            <div class="accordion-body">
-                                An MD (Doctor of Medicine) degree is a
-                                professional degree for physicians. The MPH
-                                (Master of Public Health) focuses on public
-                                health and preventive medicine.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <div class="modal fade" id="preRegisterModal" tabindex="-1"
-            aria-labelledby="preRegisterModalLabel"
-            role="dialog">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title"
-                            id="preRegisterModalLabel">Pre-register to be a
-                            patient</h5>
-                        <button type="button" class="btn-close"
-                            data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <iframe
-                            src="https://docs.google.com/forms/d/e/1FAIpQLSfD0X3MxTf_AAJEXAMPLE/formResponse"
-                            width="100%" height="500px"
-                            class="no-border"
-                            title="Pre-registration form"></iframe>
-                    </div>
-                </div>
+  <body>
+    <header>
+      <a href="#main" class="visually-hidden-focusable">Skip to main content</a>
+      <nav class="navbar navbar-expand-lg py-3" aria-label="Main">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">
+            Prows Family Medicine
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbar" aria-controls="navbar"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars fa-lg"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <div class="navbar-nav my-3 my-lg-0 ms-auto">
+              <a class="nav-link px-lg-3" href="index.html#FAQs">About</a>
+              <a class="nav-link px-lg-3" href="index.html#FAQs">FAQs</a>
             </div>
+            <a class="btn btn-primary btn-sm rounded-pill ms-lg-3"
+              href="preregister.html">Pre-Register</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <div class="container py-5">
+        <div class="row align-items-lg-center">
+          <div class="col-lg text-center text-lg-start">
+            <h1 class="display-4 mb-4">Prows Family Medicine, PLLC</h1>
+            <p>Opening April 2025</p>
+            <p class="lead text-secondary">A teeny medical office owned and
+              operated solely by <strong>Joseph Prows, MD/MPH</strong> in
+              Downtown Fort Collins, Colorado.</p>
+            <div
+              class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-lg-start gap-3">
+              <a class="btn btn-primary rounded-pill"
+                href="preregister.html">Patient Pre-Registration</a>
+              <a href="index.html#FAQs" class="link-cta">Learn More</a>
+            </div>
+          </div>
+          <div class="col-lg">
+            <img src="assets/img/jasper.png" class="img-fluid d-none d-lg-block"
+              alt>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-skew bg-skew-light"></div>
+
+      <div class="container py-5 pt-lg-4">
+        <div class="row justify-content-around align-items-center gy-4">
+          <div class="col-md-8 col-xl-7">
+            <div class="text-center text-primary">
+              <h2>Open House!</h2>
+              <p>Featuring bouncy castle, beignets, red beans, tie-dye, tours,
+                and <strong>free wart-freezing.</strong>
+                <br>Date tentatively set for April. More soon.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-xl-3">
+            <aside class="bg-white shadow rounded text-center">
+              <dl class="mb-0">
+                <dt class="fw-light text-uppercase mb-2 pt-4">Location</dt>
+                <dd class="h4 border-bottom mb-0 pb-4">418 S. Howes St,<br>
+                  Unit 200-B<br>Downtown Fort Collins</dd>
+                <dt class="fw-light text-uppercase mb-2 pt-4">Hours</dt>
+                <dd class="h4 border-bottom mb-0 pb-4">Coming Soon</dd>
+              </dl>
+            </aside>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion -->
+      <div class="container py-5" id="FAQs">
+        <h2 class="text-center mb-5">FAQs</h2>
+        <div class="col-lg-9 col-xxl-8 mx-auto">
+          <div class="accordion" id="accordionQuestions">
+            <div class="accordion-item shadow mb-2">
+              <h3 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed fs-4 fw-bold"
+                  type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="false"
+                  aria-controls="collapseOne">
+                  Who are you?
+                  <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+              </h3>
+              <div id="collapseOne" class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionQuestions">
+                <div class="accordion-body">
+                  <p>I graduated from Tulane University School of Medicine in
+                    New Orleans in 2009 and completed residency at the Alaska
+                    Family Medicine Residency Program in 2012. I am
+                    board-certified and have been practicing in Fort Collins
+                    since 2013. I live in Fort Collins with my two kids and my
+                    wife, Dr. Emily Moore, a Professor of Art History at
+                    Colorado State.</p>
+                  <ul class="mb-0">
+                    <li>Tulane School of Medicine, 2009</li>
+                    <li>Residency: Alaska Family Medicine Residency Program,
+                      2012</li>
+                    <li>Practicing medicine in Fort Collins since 2013</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item shadow mb-2">
+              <h3 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed fs-4 fw-bold"
+                  type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  What is your practice like?
+                  <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+              </h3>
+              <div id="collapseTwo" class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionQuestions">
+                <div class="accordion-body">
+                  <p>As I begin this solo practice, I intend to run as simple
+                    and straightforward a practice as humanly possible.</p>
+                  <ul class="mb-0">
+                    <li>Simple and straightforward</li>
+                    <li>Humane, small practice</li>
+                    <li>Empathy and compassion</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item shadow mb-2">
+              <h3 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed fs-4 fw-bold"
+                  type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false"
+                  aria-controls="collapseThree">
+                  How do I become a patient?
+                  <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+              </h3>
+              <div id="collapseThree" class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionQuestions">
+                <div class="accordion-body">
+                  <p>Fill out the <a
+                      href="preregister.html">pre-registration</a> form. Thank
+                    you for your patience as I begin this new venture.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item shadow mb-2">
+              <h3 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed fs-4 fw-bold"
+                  type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false"
+                  aria-controls="collapseFour">
+                  Do you accept insurance?
+                  <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+              </h3>
+              <div id="collapseFour" class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#accordionQuestions">
+                <div class="accordion-body">
+                  <p>I intend to provide in-network coverage with as many
+                    insurance companies as possible. However, the landscape of
+                    navigating insurance company contracts is a depraved
+                    hellscape, to put it mildly. </p>
+                  <p>More information about insurance coming soon.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item shadow mb-2">
+              <h3 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed fs-4 fw-bold"
+                  type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false"
+                  aria-controls="collapseFive">
+                  When will you start seeing patients?
+                  <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+              </h3>
+              <div id="collapseFive" class="accordion-collapse collapse"
+                aria-labelledby="headingFive"
+                data-bs-parent="#accordionQuestions">
+                <div class="accordion-body">
+                  <p>I hope to start seeing patients in April, 2025.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item shadow mb-2">
+              <h3 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed fs-4 fw-bold"
+                  type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix" aria-expanded="false"
+                  aria-controls="collapseSix">
+                  What is an "MD/MPH" degree?
+                  <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </button>
+              </h3>
+              <div id="collapseSix" class="accordion-collapse collapse"
+                aria-labelledby="headingSix"
+                data-bs-parent="#accordionQuestions">
+                <div class="accordion-body">
+                  <p>An MD (Doctor of Medicine) degree is a professional
+                    degree for physicians. The MPH (Master of Public Health)
+                    focuses on public health and preventive medicine.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-skew bg-skew-light">
+
+        <!-- Call to action -->
+        <div class="container py-5">
+          <div class="text-center">
+            <h2 class="mb-4">Interested in becoming a patient?</h2>
+            <p>Fill out the pre-registration form.</p>
+            <button class="btn btn-primary rounded-pill" href="preregister.html"
+              type="button">Patient Pre-Registration</button>
+          </div>
         </div>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+      </div><!-- end bg-skew -->
+    </main>
 
+    <footer class="pt-5">
+      <div class="container">
+
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-center gap-3 border-top py-3">
+          <div class="small">&copy; Copyright Joseph Prows, 2025</div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -35,34 +35,46 @@
       max-height: 30vh;
       margin: 0 auto;
     }
+
+    .background-image-container {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 300px;
+      height: 100%;
+      background-image: url('assets/img/jasper.png');
+      background-size: contain; /* or cover */
+      background-repeat: no-repeat;
+      background-position: center right;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .row.align-items-md-center {
+      position: relative;
+      z-index: 1;
+    }
+
   </style>
 
 </head>
 
 <body>
   <main id="main">
+
+
     <div class="container py-5">
-      <div class="row align-items-md-center">
+
+      <div class="row align-items-md-center position-relative">
         <div class="col-md-8 text-center text-md-start">
-          <div
-            class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-md-start gap-3">
-            <div>
-              <h1 class="display-5 mb-4">Prows Family Medicine, PLLC</h1>
-            </div>
-            <img src="assets/img/jasper.png" class="img-fluid d-sm-block d-md-none small-image"
-              alt="Small image of child patient">
+          <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-md-start gap-3">
+            <h1 class="display-5 mb-4">Prows Family Medicine, PLLC</h1>
           </div>
-          <p class="lead text-secondary">A teeny medical office owned and
-            operated solely by <strong>Dr. Joseph Prows, MD/MPH</strong> in
-            Downtown Fort Collins, Colorado.</p>
+          <p class="lead text-secondary">A teeny medical office owned and operated solely by
+            <strong>Dr. Joseph Prows, MD/MPH</strong> in Downtown Fort Collins, Colorado.</p>
         </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-2">
-          <img src="assets/img/jasper.png" class="img-fluid d-none d-md-block" alt="large image of child patient">
-        </div>
-        <div class="col-md-1"></div>
+        <div class="background-image-container d-none d-md-block"></div>
       </div>
-    </div>
 
     <div class="bg-skew bg-skew-light">
       <div class="container">

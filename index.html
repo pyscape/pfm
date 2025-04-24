@@ -55,13 +55,6 @@
           <p class="lead text-secondary">A teeny medical office owned and
             operated solely by <strong>Dr. Joseph Prows, MD/MPH</strong> in
             Downtown Fort Collins, Colorado.</p>
-            <!--
-          <div
-            class="d-flex flex-column flex-sm-row align-items-center justify-content-center justify-content-md-start gap-3">
-            <a class="btn btn-primary rounded-pill" href="preregister.html">New Patient Request</a>
-            <a href="index.html#FAQs" class="link-cta">Learn More</a>
-          </div>
-            -->
         </div>
         <div class="col-md-1"></div>
         <div class="col-md-2">
@@ -79,7 +72,7 @@
           <div class="col-md-8">
             <div class="accordion" id="accordionQuestions">
 
-              <!-- START BECOME_PATIENT-->
+              <!-- START BecomePatient-->
               <div class="accordion-item shadow mb-2">
 
                 <h3 class="accordion-header" id="BecomePatient">
@@ -120,9 +113,9 @@
                 </div>
 
               </div>
-              <!-- END BECOME_PATIENT-->
+              <!-- END BecomePatient-->
 
-              <!-- START -->
+              <!-- START OfficeProgress-->
               <div class="accordion-item shadow mb-2">
 
                 <h3 class="accordion-header" id="headingOfficeProgress">
@@ -152,9 +145,9 @@
                   </div>
                 </div>
               </div>
-              <!-- END -->
+              <!-- END OfficeProgress-->
 
-              <!-- START -->
+              <!-- START HealthRecords-->
               <div class="accordion-item shadow mb-2">
                 <h3 class="accordion-header" id="headingHealthRecords">
                   <button class="accordion-button collapsed fs-4 fw-bold"
@@ -182,9 +175,9 @@
                   </div>
                 </div>
               </div>
-              <!-- END -->
+              <!-- END HealthRecords-->
 
-              <!-- START -->
+              <!-- START WhatInsurance-->
               <div class="accordion-item shadow mb-2">
                 <h3 class="accordion-header" id="headingWhatInsurance">
                   <button class="accordion-button collapsed fs-4 fw-bold"
@@ -212,9 +205,9 @@
                   </div>
                 </div>
               </div>
-              <!-- END -->
+              <!-- END WhatInsurance-->
 
-              <!-- START -->
+              <!-- START SeeYouAnyway-->
               <div class="accordion-item shadow mb-2">
                 <h3 class="accordion-header" id="headingSeeYouAnyway">
                   <button class="accordion-button collapsed fs-4 fw-bold"
@@ -237,21 +230,21 @@
                   </div>
                 </div>
               </div>
-              <!-- END -->
+              <!-- END SeeYouAnyway-->
 
-              <!-- START -->
+              <!-- START RefillMedicine-->
               <div class="accordion-item shadow mb-2">
-                <h3 class="accordion-header" id="headingFive">
+                <h3 class="accordion-header" id="headingRefillMedicine">
                   <button class="accordion-button collapsed fs-4 fw-bold"
                     type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseFive" aria-expanded="false"
-                    aria-controls="collapseFive">
+                    data-bs-target="#collapseRefillMedicine" aria-expanded="false"
+                    aria-controls="collapseRefillMedicine">
                     Can you refill my medicine?
                     <i class="fas fa-chevron-down" aria-hidden="true"></i>
                   </button>
                 </h3>
-                <div id="collapseFive" class="accordion-collapse collapse"
-                  aria-labelledby="headingFive"
+                <div id="collapseRefillMedicine" class="accordion-collapse collapse"
+                  aria-labelledby="headingRefillMedicine"
                   data-bs-parent="#accordionQuestions">
                   <div class="accordion-body">
                     <p>
@@ -265,20 +258,20 @@
                   </div>
                 </div>
               </div>
-              <!-- END -->
+              <!-- END RefillMedicine-->
 
             </div>
 
           </div>
           <!-- END FAQ -->
 
-          <div class="col-md-4 col-xl-3">
+          <!-- START Location -->
+          <div class="col-md-4">
             <aside class="bg-white shadow rounded text-center">
               <dl class="mb-0">
                 <dt class="fw-light text-uppercase mb-2 pt-4">Location</dt>
                 <dd class="h4 border-bottom mb-0 pb-4">
-                  <a
-                    href="https://www.google.com/maps?q=Prows+Family+Medicine+South+Howes+Fort+Collins" target="_blank">
+                  <a href="https://www.google.com/maps?q=Prows+Family+Medicine+South+Howes+Fort+Collins" target="_blank">
                     418 S. Howes St</a>,<br>
                   Unit 200-B<br>Downtown Fort Collins</dd>
                 <dt class="fw-light text-uppercase mb-2 pt-4">Hours</dt>
@@ -286,11 +279,13 @@
               </dl>
             </aside>
           </div>
+          <!-- END Location -->
+
         </div>
       </div>
 
 
-    </div><!-- end bg-skew -->
+    </div><!-- END bg-skew -->
   </main>
 
   <footer class="pt-5">
@@ -299,6 +294,7 @@
       <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-center gap-3 border-top py-3">
         <div class="small">&copy; Copyright Joseph Prows, 2025</div>
       </div>
+
     </div>
   </footer>
 </body>

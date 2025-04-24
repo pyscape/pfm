@@ -38,8 +38,9 @@
 
     .background-image-global {
       position: absolute;
-      top: -4vh;
-      right: 12vh;
+      top: calc(var(--bs-gutter-x)*-0.5);
+      right: 0;
+      padding-right: calc(var(--bs-gutter-x)*.5);
       height: 350px; /* or however tall it needs to be */
       background-image: url('assets/img/jasper.png');
       background-repeat: no-repeat;

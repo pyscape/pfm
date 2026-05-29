@@ -54,6 +54,20 @@
       z-index: 0; /* allows the background to be layered under content */
     }
 
+    /* Match the accordion header color */
+    .btn-portal {
+      background-color: var(--bs-primary-bg-subtle);
+      border-color: var(--bs-primary-bg-subtle);
+      color: var(--bs-primary-text-emphasis);
+    }
+
+    .btn-portal:hover,
+    .btn-portal:focus {
+      background-color: var(--bs-primary-border-subtle);
+      border-color: var(--bs-primary-border-subtle);
+      color: var(--bs-primary-text-emphasis);
+    }
+
   </style>
 
 </head>
@@ -77,10 +91,6 @@
           </div>
           <p class="lead text-secondary">A teeny medical office owned and operated solely by
             <strong>Dr. Joseph Prows, MD/MPH</strong> in Downtown Fort Collins, Colorado.</p>
-          <a href="https://app.elationpassport.com/patient-portal/login?next=/patient-portal/"
-            class="btn btn-primary btn-lg mt-2" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-right-to-bracket me-2" aria-hidden="true"></i>Patient Portal Login
-          </a>
         </div>
       </div>
 
@@ -159,6 +169,12 @@
 
             <!-- START Location -->
             <div class="col-md-4 align-items-md-center">
+              <div class="text-center mb-3">
+                <a href="https://app.elationpassport.com/patient-portal/login?next=/patient-portal/"
+                  class="btn btn-portal btn-lg" target="_blank" rel="noopener noreferrer">
+                  <i class="fas fa-right-to-bracket me-2" aria-hidden="true"></i>Patient Portal Login
+                </a>
+              </div>
               <aside class="bg-white shadow rounded text-center">
                 <dl class="mb-0">
                   <dt class="fw-light text-uppercase mb-2 pt-4">Location</dt>
